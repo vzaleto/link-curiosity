@@ -50,16 +50,9 @@ app.get('/go', async (req, res) => {
     res.redirect(to);
 })
 
-// app.get('*', (req, res) => {
-//
-//     const requestedPath = req.path;
-//
-//     if (requestedPath.startsWith('http')) {
-//         return res.status(400).send('Invalid path');
-//     }
-//
-//     res.sendFile(path.join(__dirname, 'client/build/index.html'));
-// })
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'client/build/index.html'));
+});
 
 app.listen(PORT,'0.0.0.0', () => {
     console.log(`Server listening on port 'http://0.0.0.0:${PORT}'`);
