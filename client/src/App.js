@@ -19,10 +19,10 @@ function App() {
         }
 
         const encodedUrl = encodeURIComponent(url);
-        const trackerUrl = `https://8c7b-188-163-50-254.ngrok-free.app/go?to=${encodedUrl}`;
+        const trackerUrl = `${window.location.origin}/go?to=${encodedUrl}`;
 
         setGentraleLink(trackerUrl);
-        // setGentraleLink('')
+      setError('')
 
     }
 
@@ -37,7 +37,8 @@ function App() {
                 genetrateLink && (
                     <div>
                         <p>Скопируй эту ссылку и отправь другу:</p>
-                       <input type="text" value={genetrateLink} readOnly/>
+                        <p>{genetrateLink}</p>
+                       {/*<input type="text" value={genetrateLink} readOnly/>*/}
                     </div>
                 )
             }
