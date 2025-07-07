@@ -6,7 +6,10 @@
     "dev": "nodemon server.js",
     "build": "cd client && npm run build",
     "postinstall": "cd client && npm install",
+    "start-client": "cd client && npm start",
+    "install-server": "npm install",
     "start": "node server.js"
+
   },
   "keywords": [],
   "author": "",
