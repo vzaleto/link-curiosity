@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "nodemon server.js",
     "build": "cd client && npm run build",
-    "postinstall": "cd client && npm install",
+    "postinstall": "cd client && npm run build",
     "start": "node server.js"
 
   },
