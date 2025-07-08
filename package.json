@@ -4,8 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon server.js",
-    "build": "cd client && npm run build",
-    "postinstall": "cd client && npm run build",
+    "client": "npm start --prefix client",
     "start": "node server.js"
 
   },
