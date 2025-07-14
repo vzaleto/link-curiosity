@@ -31,7 +31,7 @@ function App() {
 
         const fetchLogs = async () =>{
             try{
-                const response = await axios.get('http://0.0.0.0:3001/log')
+                const response = await axios.get(`${window.location.origin}/log`)
 
                     setLocationData(response.data)
 
